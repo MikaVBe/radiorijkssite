@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+<head>
+  <title>My Cool Website</title>
+  <style>
+    /* Add some style to the page */
+    body {
+      background-color: lightblue;
+      font-family: sans-serif;
+    }
+    h1 {
+      color: rgb(220, 202, 64);
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to My Cool Website</h1>
+  <p>This page is a work in progress, but I hope you enjoy it!</p>
+  <ul>
+    <li>Home</li>
+    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">About</a></li>
+    <li>Contact</li>
+  </ul>
+  <div id="myDiv">
+    <!-- Add some content to this div using JavaScript -->
+  </div>
+  <script>
+    // Add some JavaScript to the page
+    document.getElementById("myDiv").innerHTML = "";
+  </script>
+</body>
+
+
+
+<button id="btnFade">Fade in/out</button>
+<div id="myDiv">Hello, World!</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $("#btnFade").click(function() {
+    $("#myDiv").fadeToggle();
+  });
+</script>
+
+
+<button id="btnSlide">Slide up/down</button>
+<div id="myDiv">Hello, World!</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $("#btnSlide").click(function() {
+    $("#myDiv").slideToggle();
+  });
+</script>
+
+
+
+
+
+<button id="btnAnimate">Click me to move me!</button>
+<div id="myDiv">Hello, World!</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $("#btnAnimate").click(function() {
+    $("#myDiv").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '10px',
+      width: '10px'
+    });
+  });
+</script>
+
+
+<style>
+    /* Make the mouse cursor invisible */
+    body {
+      cursor: none;
+    }
+    
+    /* Add a transition effect to the dot */
+    #dot {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+     /* background-image: url(/home/chronos/u-c353dacefec105da871763f87d5edb5bb5465642/MyFiles/Downloads/obamium.gif); */
+      background-color: red;
+      background-size: cover;
+      transform: scale(4);
+      transition: all 0.1s ease-out;
+    }
+  </style>
+  <div id="dot"></div>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).mousemove(function(event) {
+      $("#dot").css({
+        left: event.pageX,
+        top: event.pageY
+      });
+    });
+  </script>
+<script>
+
+
+<!-- HTML for the image -->
+<div id="image">
+  <img src="/img/obamium.gif" alt="">
+</div>
+
+
+// JavaScript for moving the image
+const image = document.getElementById('image');
+
+let x = 0;
+let y = 0;
+let speed = 5;
+
+let isDragging = false;
+
+const updateImagePosition = () => {
+  image.style.top = `${y - image.offsetHeight / 2}px`;
+  image.style.left = `${x - image.offsetWidth / 2}px`;
+
+  requestAnimationFrame(updateImagePosition);
+};
+
+const onMouseDown = (event) => {
+  isDragging = true;
+  image.style.cursor = 'grabbing';
+};
+
+const onMouseUp = (event) => {
+  isDragging = false;
+  image.style.cursor = 'grab';
+};
+
+const onMouseMove = (event) => {
+  if (isDragging) {
+    x = event.clientX;
+    y = event.clientY;
+  }
+};
+
+const onClick = (event) => {
+  // Handle clicks here
+};
+
+document.addEventListener('mousedown', onMouseDown);
+document.addEventListener('mouseup', onMouseUp);
+document.addEventListener('mousemove', onMouseMove);
+document.addEventListener('click', onClick);
+
+updateImagePosition();
+
+
+</script>
+
+
+</html>
