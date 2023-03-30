@@ -1,167 +1,241 @@
 <!DOCTYPE html>
-<html>
-
-
-
+<html lang="en">
 
 <head>
-  <title>My Cool Website</title>
-  <style>
-    /* Add some style to the page */
-    body {
-      background-color: lightblue;
-      font-family: sans-serif;
-    }
-    h1 {
-      color: rgb(220, 202, 64);
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>RadioRijks</title>
+  <title>Radio Rijks</title>
+  <meta name="RADIO RIJKS" content="IF YOU DARE TO LISTEN">
+  <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet"
+    type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <link rel="stylesheet" href="./styles.css">
+
 </head>
-<body>
-  <h1>Welcome to My Cool Website</h1>
-  <p>This page is a work in progress, but I hope you enjoy it!</p>
-  <ul>
-    <li>Home</li>
-    <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">About</a></li>
-    <li>Contact</li>
-  </ul>
-  <div id="myDiv">
-    <!-- Add some content to this div using JavaScript -->
+
+<!--
+<div class="container-block">
+  <h1 style="color: white; position:absolute;" > Most recently <br> played</h1>
+  <div class="nowplayingcard">
+    <div class="nowplayingcontainer-inner">
+      <img id="trackart" src="#">
+      <div class="trackInfo">
+        <a id="tracktitle" class="tracktitle"></a>
+        <a href="#" id="trackartist"></a>
+      </div>
+      <div id="divider"></div>
+
+      <div class="trackInfo otherSong">
+        <img id="track2art" src="#">
+        <a id="track2title" class="tracktitle"></a>
+        <a href="#" id="track2artist"></a>
+      </div>
+      <div id="divider"></div>
+      <div class="trackInfo otherSong">
+        <img id="track3art" src="#">
+        <a id="track3title" class="tracktitle"></a>
+        <a href="#" id="track3artist"></a>
+      </div>
+      <div id="divider"></div>
+      <div class="trackInfo otherSong">
+        <img id="track4art" src="#">
+        <a id="track4title" class="tracktitle"></a>
+        <a href="#" id="track4artist"></a>
+      </div>
+    </div>
   </div>
-  <script>
-    // Add some JavaScript to the page
-    document.getElementById("myDiv").innerHTML = "";
-  </script>
-</body>
-
-
-
-<button id="btnFade">Fade in/out</button>
-<div id="myDiv">Hello, World!</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $("#btnFade").click(function() {
-    $("#myDiv").fadeToggle();
-  });
-</script>
-
-
-<button id="btnSlide">Slide up/down</button>
-<div id="myDiv">Hello, World!</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $("#btnSlide").click(function() {
-    $("#myDiv").slideToggle();
-  });
-</script>
-
-
-
-
-
-<button id="btnAnimate">Click me to move me!</button>
-<div id="myDiv">Hello, World!</div>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $("#btnAnimate").click(function() {
-    $("#myDiv").animate({
-      left: '250px',
-      opacity: '0.5',
-      height: '10px',
-      width: '10px'
-    });
-  });
-</script>
-
-
-<style>
-    /* Make the mouse cursor invisible */
-    body {
-      cursor: none;
-    }
-    
-    /* Add a transition effect to the dot */
-    #dot {
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      border-radius: 10px;
-     /* background-image: url(/home/chronos/u-c353dacefec105da871763f87d5edb5bb5465642/MyFiles/Downloads/obamium.gif); */
-      background-color: red;
-      background-size: cover;
-      transform: scale(4);
-      transition: all 0.1s ease-out;
-    }
-  </style>
-  <div id="dot"></div>
-  
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).mousemove(function(event) {
-      $("#dot").css({
-        left: event.pageX,
-        top: event.pageY
-      });
-    });
-  </script>
-<script>
-
-
-<!-- HTML for the image -->
-<div id="image">
-  <img src="/img/obamium.gif" alt="">
 </div>
+-->
+
+<body>
+  <!-- partial:index.partial.html -->
+
+  <body>
+    <!-- navbar header -->
+    <div>
+      <div class="nav-header">
+        <div class="nav-brand">
+         
+
+        </div>
+
+        <i class="fa fa-bars fa-3x"></i>
+
+        <div class="header-links">
+          <ul>
+            <img style="width: 100px; position: absolute;" src="./img/logo_radio_rijks_25_4(1).png">
+            <li data-menuanchor="verzoekjes"><a href="#verzoekjes">Verzoekjes</a></li>
+            <li data-menuanchor="onze-tijdlijn"><a href="#onze-tijdlijn">Onze tijdlijn</a></li>
+            <li data-menuanchor="overons"><a href="#overons">Kom ook bij Radio Rijks</a></li>
+            
 
 
-// JavaScript for moving the image
-const image = document.getElementById('image');
 
-let x = 0;
-let y = 0;
-let speed = 5;
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar header -->
 
-let isDragging = false;
+    <!-- sidebar slider -->
+    <div class="nav-screen">
+      <i class="fa fa-times fa-3x"></i>
+      <div class="nav-container">
+        <div class="nav-links">
+          <ul id='myMenu'>
+            <li data-menuanchor="overons"><a href="#overons">KOM OOK BIJ RADIO RIJKS</a></li>
+            <li data-menuanchor="onze-tijdlijn"><a href="#onze-tijdlijn">ONZE TIJDLIN</a></li>
+            <li data-menuanchor="verzoekjes"><a href="#verzoekjes">VERZOEKJES</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar slider -->
 
-const updateImagePosition = () => {
-  image.style.top = `${y - image.offsetHeight / 2}px`;
-  image.style.left = `${x - image.offsetWidth / 2}px`;
+    <!-- begin fullpage -->
 
-  requestAnimationFrame(updateImagePosition);
-};
-
-const onMouseDown = (event) => {
-  isDragging = true;
-  image.style.cursor = 'grabbing';
-};
-
-const onMouseUp = (event) => {
-  isDragging = false;
-  image.style.cursor = 'grab';
-};
-
-const onMouseMove = (event) => {
-  if (isDragging) {
-    x = event.clientX;
-    y = event.clientY;
-  }
-};
-
-const onClick = (event) => {
-  // Handle clicks here
-};
-
-document.addEventListener('mousedown', onMouseDown);
-document.addEventListener('mouseup', onMouseUp);
-document.addEventListener('mousemove', onMouseMove);
-document.addEventListener('click', onClick);
-
-updateImagePosition();
+    <div id="fullpage">
 
 
-</script>
 
+
+      <!-- begin section -->
+
+
+
+      <div class="section aboutme" data-anchor="startpagina">
+
+
+        <!-- partial -->
+
+        <div class="opaque-bg animated fadeInDown">
+          <h1 style="color:rgb(49, 150, 216)">RADIO<span style="color:rgb(212, 216, 18)">/</span>RIJKS</h1>
+          <p><span id="holder"></span><span class="blinking-cursor">|</span></p>
+        </div>
+
+
+
+        <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
+      </div>
+
+
+      <!-- begin section -->
+
+      <div class="section" data-anchor="Verzoekjes">
+        <div class="content">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">VERZOEKJES</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">Hieronder kan je verzoeknummerjes aanvragen!</p>
+
+          <div>
+            <!-- begin section -->
+
+            <!-- hier komen de verzoeknummertjes!!!  -->
+            
+            
+            <form action="/manager/eigenaar/make/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">STUUR IN</button>
+            </div>
+          </form>
+            
+            
+            
+        
+
+            <!-- end section -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="onze-tijdlijn">
+      <div class="content-slide">
+        <div class="slide">
+          <h1 class="wow fadeInDown" data-wow-delay="0.2s">ONZE TIJDLIJN</h1>
+          <p class="wow fadeInDown" data-wow-delay="0.2s">1994: Radio Rijks wordt opgericht door meneer Brand.</p>
+          <img class="wow fadeInUp" data-wow-delay="0.2s" data-src="./img/img1.jpg">
+        </div>
+        <div class="slide">
+          <h1>ONZE TIJDLIJN</h1>
+          <p>Onze studio wordt officieel geopend.</p>
+          <img data-src="/img/img2.jpg">
+        </div>
+        <div class="slide">
+          <h1>ONZE TIJDLIJN</h1>
+          <p>Door </p>
+          <img data-src="/img/img3.jpg">
+        </div>
+        <div class="slide">
+          <h1>ONZE TIJDLIJN</h1>
+          <p>moment 4</p>
+          <img data-src="/img/img4.jpg">
+        </div>
+        <div class="slide">
+          <h1>ONZE TIJDLIJN</h1>
+          <p>moment 5</p>
+          <img data-src="/img/img5.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section" data-anchor="overons">
+      <div class="content wow fadeInDown" data-wow-delay="0.2s">
+        <h1>KOM OOK BIJ RADIO RIJKS</h1>
+        <p>Wij zijn altijd op zoek naar nieuwe Dj's</p>
+        <br>
+        <div class="contact-form">
+
+          <form action="/manager/eigenaar/make/" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">VERSTUUR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    <!-- begin section -->
+
+    <div class="section fp-auto-height">
+      <div class="footer">
+        <p>ONZE SOCIALS</p>
+        <div class="social-links">
+          <span><a href="https://www.facebook.com/people/Radio-Rijks/100067039086432/" target="_blank"><i
+                class="fa fa-facebook fa-2x"></i></a></span>
+          <span><a target="_blank" href="https://instagram.com/radiorijks" target="_blank"><i
+                class="fa fa-instagram fa-2x"></i></a></span>
+          <span><a href="https://last.fm/user/radiorijks" target="_blank"><i class="fa fa-lastfm fa-2x"></i></a></span>
+          <span><a href="https://www.youtube.com/@rsgrijksweb/"><i class="fa fa-youtube fa-2x"></i></a></span>
+        </div>
+      </div>
+    </div>
+    <!-- end section -->
+
+    </div>
+    <!-- end fullpage -->
+  </body>
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+  <script src="./script.js"></script>
+
+</body>
 
 </html>
